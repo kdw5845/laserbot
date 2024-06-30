@@ -117,7 +117,7 @@ if 'history' not in st.session_state:
 st.session_state.col1 = st.columns(1)
 
 # Main display area for text
-st.text_area("Conversation - please scroll to see latest answer", value="\n".join(st.session_state.history), height=350, key='conversation_{st.session_state.input_key}', disabled=False)
+st.text_area("Conversation - please scroll to see latest answer", value="\n".join(st.session_state.history), height=550, key='conversation_{st.session_state.input_key}', disabled=False)
 
 # Function to update conversation history
 def update_history():
@@ -142,7 +142,7 @@ st.text_input("Please state your question here - Press ENTER when you are finish
 
 st.write("")
 st.write("")
-st.image('avatar.png', caption='MedSkin Youth Expert')
+st.image('avatar.png', caption='Laser Hair Removal Expert')
 st.write("For educational purposes only!")
 st.write("Chatbot may give wrong answers!")
 
